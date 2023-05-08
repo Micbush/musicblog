@@ -24,14 +24,15 @@ const App = () => {
     const res = await fetch('https://my-json-server.typicode.com/typicode/demo/db')
     const data = await res.json()
     
-
-    return data
+   return data
+  //  uncomment this console.log to see the error and it will fetch the data but throw an error
+    // console.log(data)
   }
   return (
     <Router>
 
         
-    <div className="App container " style={{backgroundColor:'milk'}} >
+    <div className="App container ">
       <Header />
       
       <Routes>
@@ -44,7 +45,9 @@ const App = () => {
      
       <Route path='/download' element={<Details />} />
       </Routes>
+      {/* pagination not yet working cus of the i couldn't display the post properly and yea, thats it */}
       <Pagination />
+      {/* Yea and the slug i have not done it */}
       {/* <span class="back-to-top-wrapper">
         <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">🔝</a>
       </span> */}
