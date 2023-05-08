@@ -25,7 +25,7 @@ const App = () => {
     const data = await res.json()
     
    return data
-  //  uncomment this console.log to see the error and it will fetch the data but throw an error
+  // comment the "return data" and uncomment this console.log to see the error and it will fetch the data but throw an error
     // console.log(data)
   }
   return (
